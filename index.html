@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    <body>
+    <body id="target">
         <header>
                 <h1><a href="index.html">JavaScript</a></h1>
         </header>
@@ -18,5 +18,9 @@
             
             </ol>
         </nav>
+            <div id="control">
+                <input type="button" value="White" onclick="document.getElementById('target').className='white'" />
+                <input type="button" value="Black" onclick="document.getElementById('target').className='black'" />
+            </div>
     </body>
 </html>

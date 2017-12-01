@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body id="target"> 
         <header>
             <h1><a href="index.html">JavaScript</a></h1>
         </header>
@@ -17,6 +17,10 @@
                 <li><a href="page_op.html">연산자</a></li>
             </ol>
         </nav>
+            <div id="control">
+                <input type="button" value="White" onclick="document.getElementById('target').className='white'" />
+                <input type="button" value="Black" onclick="document.getElementById('target').className='black'" />
+            </div>
         <article>
             <h2>연산자</h2>
             계산을 할 때 사용되는 것입니다.
